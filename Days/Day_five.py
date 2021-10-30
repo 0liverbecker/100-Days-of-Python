@@ -1,4 +1,7 @@
 # Day_five
+## Coding exercise - High Score Calc
+###################################################################################################
+# Here you give me information and separate it with a space, so i can make a List
 student_scores = input("Input a list of student scores ").split()
 for n in range(0, len(student_scores)): 
     student_scores[n] = int(student_scores[n])
@@ -10,3 +13,5 @@ for score in student_scores: ## for every score in student_score do this?
     if score > highest_score: ## ask if position 0 higher as high = now if pos 1 high as...and this so long until the highest is found
         highest_score = score ## then put this highest score in this variable
 print (f"The highest Score in the class is: {highest_score}") ## print it out
+
+#####################################################################################################
