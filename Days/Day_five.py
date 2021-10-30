@@ -35,7 +35,48 @@
 #   Important, there should only be 1 print statement in your console output. It should just print the final total and not every step of the calculation.
 #   There are quite a few ways of solving this problem, but you will need to use the range() function in any of the solutions.
 # My Solution 
-total = 0
-for number in range(2, 100, 2): 
-    total += number 
-print (total) 
+#total = 0
+#for number in range(2, 101, 2): 
+#    total += number 
+#print (total) 
+#########################################################################################################
+#   The Fizz Buzz Exercise
+#   Your program should print each number from 1 to 100 in turn.
+#   When the number is divisible by 3 then instead of printing the number it should print "Fizz".
+#   When the number is divisible by 5, then instead of printing the number it should print "Buzz".` 
+#   And if the number is divisible by both 3 and 5 e.g. 15 then instead of the number it should print "FizzBuzz"`
+# my Solution
+#for number in range (1, 100):
+#    if number % 3  :
+#        print ("Fizz")
+#    elif number % 5 :
+#        print ("Buzz")
+#    elif number % 3 and number % 5 :
+#        print ("FizzBuzz")
+#    else:
+#        print (number)
+#print (number)
+#   this was my first idea, but it print only fizz and buzz. 
+#for number in range (1, 100):
+#    if number % 3 == 0 :
+#        print ("Fizz")
+#    elif number % 5 == 0:
+#        print ("Buzz")
+#    elif number % 3 == 0 and number % 5 == 0:
+#        print ("FizzBuzz")
+#    else:
+#        print (number)
+#print (number)
+#   now it print the 3 and 5 out, but not the FzzBuzz statement. 
+#   the problem is that the program skip to 3and5 when the first is right. 
+#for number in range (1, 100):
+#    if number % 3 == 0 and number % 5 == 0:
+#        print ("FizzBuzz")
+#    elif number % 3 == 0 :
+#        print ("Fizz")
+#    elif number % 5 == 0:
+#        print ("Buzz")
+#    else:
+#        print (number)
+#print (number)
+#   now is right, i write the and function first. now is it right
