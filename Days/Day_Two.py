@@ -2,11 +2,11 @@
 #Data Type
 #String:
 #to print a special character of a word, you can use the index function
-print ("Hello"[0])
+#print ("Hello"[0])
 
 #Interger
 #This mean hole number
-print(123+4535)
+#print(123+4535)
 
 #Float
 #this are number with dot
@@ -16,10 +16,10 @@ print(123+4535)
 #This mean True or False
 
 #When you will know what Type is your Variable then do this
-print (type(name_of_a_Variable))
+#print (type(name_of_a_Variable))
 
 #you can convert it into a string
-new_num_char = str(name_of_a_variable)
+#new_num_char = str(name_of_a_variable)
 #----------------------------------------------------------------
 #praxis 1
 add_num = input ("Gibe ein zweistellige Zahl ein: ")
