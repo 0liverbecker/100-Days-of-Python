@@ -80,8 +80,8 @@ for _ in range(word_length):
 #print(display)
 #Step 4
 
-import random
-
+#import random
+"""
 stages = ['''
   +---+
   |   |
@@ -186,3 +186,5 @@ while not end_of_game:
 
     #TODO-3: - print the ASCII art from 'stages' that corresponds to the current number of 'lives' the user has remaining.
     print(stages[lives])
+    """
+
