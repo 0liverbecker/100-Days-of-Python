@@ -30,6 +30,38 @@ test_h = int(input("Height of wall: "))
 test_w = int(input("Width of wall: "))
 coverage = 5
 paint_calc(height=test_h, width=test_w, cover=coverage)
-'''
+''' 
+#Do NOT change any of the code below👇
+''' Here is my Solution for a Prime Checker
+primzahlen =[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
 
+def primecheck():
+    n = int(input("Check this number (only 2 digits): "))
+    if n in primzahlen:
+        print (f"{n} ist eine Primzahl.")
+    else:
+        print (f"{n} ist keine Primzahl.")
+    restart = input("Type 'yes' if you want to go again. Otherwise type 'no'.\n")
+    if restart == "yes":
+        primecheck()
+    else:
+        print("Goodbye")
+primecheck()
+'''
+# here is the right solution
+
+def prime_checker(number):
+    is_prime = True
+    for i in range (2, number):
+        if number % i == 0:
+            is_prime = False
+    if is_prime:
+        print ("Its a prime number.")
+    else:
+        print("Its not a prime number.")
+n = int(input("Check this number: "))
+prime_checker(number=n)
+  
+        
+    
 
