@@ -62,16 +62,10 @@ def prime_checker(number):
 n = int(input("Check this number: "))
 prime_checker(number=n)
 '''
-from base64 import encode
-
-
+# my solution for the ceasar cipher challenge:
+'''
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
-text = input("Type your message:\n").lower()
-shift = int(input("Type the shift number:\n"))
-
-#TODO-1: Create a function called 'encrypt' that takes the 'text' and 'shift' as inputs.
 def encrypt(text, shift):
     ausgabetext = ""
     for letter in text:
@@ -80,23 +74,22 @@ def encrypt(text, shift):
         new_letter = alphabet[new_position]
         ausgabetext += new_letter
     print (f"Der geheime Code lautet :{ausgabetext}")
-        
-if direction == "decode":
-    encrypt(text, shift)
-else:
-    shift = (26-shift)
-    encrypt(text, shift)
+    restart = input("Type 'yes' if you want to go again. Otherwise type 'no'.\n")
+    if restart == "yes":
+        ceasar()
+    else:
+        print("Goodbye")
 
-    #TODO-2: Inside the 'encrypt' function, shift each letter of the 'text' forwards in the alphabet by the shift amount and print the encrypted text.  
-    #e.g. 
-    #plain_text = "hello"
-    #shift = 5
-    #cipher_text = "mjqqt"
-    #print output: "The encoded text is mjqqt"
+def ceasar():
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+    text = input("Type your message:\n").lower()
+    shift = int(input("Type the shift number:\n"))  
+    if direction == "decode":
+        encrypt(text, shift)
+    else:
+        shift = (26-shift)
+        encrypt(text, shift)
 
-    ##HINT: How do you get the index of an item in a list:
-    #https://stackoverflow.com/questions/176918/finding-the-index-of-an-item-in-a-list
-
-    ##🐛Bug alert: What happens if you try to encode the word         
-    
+ceasar()    
+'''
 
