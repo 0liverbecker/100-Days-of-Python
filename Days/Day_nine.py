@@ -65,7 +65,7 @@ travel_log = [
   "total_visits": 5,
 },
 ]
-'''
+
 travel_log = [
 {
   "country": "France",
@@ -91,3 +91,37 @@ def add_new_Country(country_visit, times_visit, cities_visit):
 
 add_new_Country("Russia", 2, ["Moscow", "Minskt"])
 print(travel_log)
+'''
+#Start the last Program ---> The Secret Auction
+import os
+ 
+def clear():  # Cross-platform clear screen
+    os.system('cls' if os.name == 'nt' else 'clear')
+bids = {}
+bidding_finished = False
+
+# the next def was not clear for me. Im in struggle with this for loop :(
+def find_highest_bidder(bidding_record):
+  highest_bid = 0
+  winner = ""
+  # bidding_record = {"Angela": 123, "James": 321}
+  for bidder in bidding_record:
+    bid_amount = bidding_record[bidder]
+    if bid_amount > highest_bid: 
+      highest_bid = bid_amount
+      winner = bidder
+  print(f"The winner is {winner} with a bid of ${highest_bid}")
+
+while not bidding_finished: 
+  name = input("What is your name?: ")
+  price = int(input("What is your bid?: $"))
+  bids[name] = price
+  should_continue = input("Are there any other bidders? Type 'yes or 'no'.\n")
+  if should_continue == "no":
+    bidding_finished = True
+    find_highest_bidder(bids)
+  elif should_continue == "yes":
+    clear()
+
+
+  
